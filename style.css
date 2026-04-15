@@ -1,0 +1,253 @@
+/* ===== VARIABLES & BASE SETUP ===== */
+:root {
+    --dark-blue: #1E2B4B;
+    --yellow-gold: #FFD100;
+    --accent-orange: #F39C12;
+    --light-gray: #F5F7FA;
+    --white: #FFFFFF;
+    --text-color: #333333;
+    --font-main: 'Inter', sans-serif;
+    --container-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-color);
+    background-color: var(--white);
+    line-height: 1.4;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== TOP BANNER ===== */
+.top-banner {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.top-banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Centered visually better for banner */
+    gap: 8px;
+}
+
+/* ===== HEADER ===== */
+.header {
+    background-color: var(--white);
+    padding: 15px 0;
+}
+
+.logo {
+    height: 70px;
+    width: auto;
+    display: block;
+}
+
+/* ===== HERO SECTION ===== */
+.hero-section {
+    background-image:
+        linear-gradient(to bottom, rgba(167, 166, 180, 0.342), rgba(0, 0, 0, 0.4)),
+        url('../Source/NamsanTower.png');
+    background-size: cover;
+    background-position: center 70%;
+    /* Move Namsan Tower further up */
+    background-repeat: no-repeat;
+    min-height: 400px;
+    /* Even smaller hero */
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.hero-text-block {
+    max-width: 900px;
+}
+
+.hero-edition {
+    color: rgb(255, 233, 40);
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.hero-title {
+    color: rgb(255, 255, 255);
+    font-size: 56px;
+    font-weight: 750;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.hero-details {
+    margin-top: 20px;
+}
+
+.detail-location,
+.detail-date {
+    color: rgb(255, 233, 40);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* ===== CTA BAR ===== */
+.cta-bar {
+    background-color: var(--dark-blue);
+    padding: 15px 0;
+}
+
+.cta-container {
+    display: flex;
+    justify-content: center;
+    /* Download Poster Center alignment */
+}
+
+.download-link {
+    color: var(--white);
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.download-link:hover {
+    color: var(--yellow-gold);
+}
+
+/* ===== SECTIONS COMMON ===== */
+.section {
+    padding: 60px 0;
+    background-color: var(--white);
+}
+
+.section-heading {
+    text-align: center;
+    color: var(--dark-blue);
+    font-size: 36px;
+    font-weight: 750;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.heading-underline {
+    width: 60px;
+    height: 6px;
+    background-color: var(--accent-orange);
+    margin: 0 auto 50px auto;
+}
+
+/* ===== KEYNOTE SPEAKERS ===== */
+.keynote-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.speaker-item {
+    text-align: center;
+}
+
+.speaker-photo {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    background-color: #ccc;
+    /* Fallback for gray box */
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.speaker-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.speaker-country {
+    font-weight: 700;
+}
+
+/* ===== INVITED SPEAKERS (4-COL REQUIREMENT) ===== */
+.invited-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.invited-box {
+    background-color: var(--light-gray);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+}
+
+/* ===== RESPONSIVENESS ===== */
+@media (max-width: 1024px) {
+    .invited-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero-title {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 768px) {
+    .keynote-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .invited-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-edition,
+    .detail-location,
+    .detail-date {
+        font-size: 20px;
+    }
+
+    .cta-container {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .invited-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1400px) {
+    .hero-section {
+        background-position: center 60%;
+        /* Prevent the tower from going off-screen on ultra-wide monitors */
+    }
+}
