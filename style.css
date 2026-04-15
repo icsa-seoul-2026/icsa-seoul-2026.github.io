@@ -62,7 +62,7 @@ body {
 .hero-section {
     background-image:
         linear-gradient(to bottom, rgba(167, 166, 180, 0.342), rgba(0, 0, 0, 0.4)),
-        url('../Source/NamsanTower.png');
+        url('./Source/NamsanTower.png');
     background-size: cover;
     background-position: center 70%;
     /* Move Namsan Tower further up */
