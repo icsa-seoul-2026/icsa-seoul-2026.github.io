@@ -215,7 +215,7 @@ body {
 }
 
 .speaker-institute {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     color: #555;
     display: block;
@@ -241,7 +241,7 @@ body {
     padding: 15px;
     border-radius: 8px;
     text-align: center;
-    font-size: 19px;
+    font-size: 20px;
     /* Increased from 16px */
     font-weight: 600;
     color: var(--text-color);
