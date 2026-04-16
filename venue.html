@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11th ICSA Conference - Venue</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .venue-info {
+            text-align: left;
+            max-width: 900px;
+            margin: 40px auto;
+            color: var(--text-color);
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .venue-info h3 {
+            color: var(--dark-blue);
+            margin-top: 40px;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid var(--accent-orange);
+            display: inline-block;
+            font-size: 24px;
+        }
+
+        .venue-info p {
+            margin-bottom: 10px;
+        }
+
+        .venue-info ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .venue-info li {
+            margin-bottom: 8px;
+        }
+
+        .map-wrapper {
+            margin: 30px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-link {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 12px 24px;
+            background-color: var(--dark-blue);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 700;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-link:hover {
+            background-color: var(--accent-orange);
+            color: var(--white);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header area for Nav and Logo -->
+    <header class="header">
+        <div class="container header-container">
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="programs.html" class="nav-link">Programs</a>
+                <a href="registration.html" class="nav-link">Registration</a>
+                <a href="venue.html" class="nav-link active">Venue</a>
+                <a href="organizer.html" class="nav-link">Organizer</a>
+            </nav>
+            <a href="https://www.cellsenescence.info/" target="_blank" rel="noopener noreferrer">
+                <img src="./Source/ICSA_Logo.png" alt="ICSA Logo" class="logo">
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main style="min-height: 60vh; padding: 60px 0; text-align: center;">
+        <div class="container">
+            <h2 class="section-heading">VENUE</h2>
+            <div class="heading-underline"></div>
+
+            <div class="venue-info">
+                <h3>Location</h3>
+                <p><strong>Siheung Convention Center, South Korea</strong></p>
+                <p>Seoul National University Siheung Campus is located in Baegot New Town, Siheung City,
+                    Gyeonggi-do.<br>
+                    <strong>Address:</strong> 173, Seouldaehak-ro, Siheung-si, Gyeonggi-do, Republic of Korea
+                </p>
+
+                <div class="map-wrapper">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.0494793627763!2d126.72659341566838!3d37.37566274474415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b77ab68fc2ad5%3A0xc3b86867375ff69a!2sSeoul%20National%20University%20Siheung%20Campus%20Convention%20Center!5e0!3m2!1sen!2skr!4v1713233857597!5m2!1sen!2skr"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <h3>Transportation</h3>
+
+                <p><strong>By Subway</strong></p>
+                <ul>
+                    <li>Get off at <strong>Oido Station</strong> (Seoul Subway Line 4)</li>
+                    <li>Walk 205m from Exit 1 and 2</li>
+                    <li>Take <strong>Bus 62</strong> (in the direction of Baegot)</li>
+                    <li>Get off at <strong>Halla Vivaldi 2nd stop</strong> (Takes about 10-15 minutes)</li>
+                </ul>
+
+                <p><strong>By Bus</strong></p>
+                <ul>
+                    <li>Get on <strong>Bus No. 3500</strong> and then get off at Seoul National University Siheung
+                        Campus
+                        bus stop</li>
+                    <li><strong>Course:</strong> Seoul National University Siheung Campus ↔ Seoul National University
+                        (Gwanak) Main Gate ↔ Seoul National University Station</li>
+                    <li><strong>Time Required:</strong> About 40 minutes</li>
+                    <li><strong>Fare:</strong> 2,800 KRW</li>
+                </ul>
+
+                <div style="text-align: center;">
+                    <a href="https://www.snushc.com/en/about" target="_blank" class="btn-link">Detailed Information</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer style="background: #1E2B4B; color: #fff; text-align: center; padding: 20px 0; margin-top: 40px;">
+        <p>&copy; 2026 ICSA Seoul. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

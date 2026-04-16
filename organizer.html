@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11th ICSA Conference - Organizer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .organizer-list {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            max-width: 800px;
+            margin: 40px auto;
+            text-align: left;
+        }
+
+        .organizer-card {
+            background-color: var(--light-gray);
+            padding: 25px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid var(--accent-orange);
+            transition: transform 0.2s ease;
+        }
+
+        .organizer-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .organizer-name {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--dark-blue);
+            margin-bottom: 5px;
+        }
+
+        .organizer-institute {
+            font-size: 16px;
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .organizer-email {
+            font-size: 15px;
+            color: var(--text-color);
+        }
+
+        .organizer-email a {
+            color: var(--dark-blue);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .organizer-email a:hover {
+            color: var(--accent-orange);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header area for Nav and Logo -->
+    <header class="header">
+        <div class="container header-container">
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="programs.html" class="nav-link">Programs</a>
+                <a href="registration.html" class="nav-link">Registration</a>
+                <a href="venue.html" class="nav-link">Venue</a>
+                <a href="organizer.html" class="nav-link active">Organizer</a>
+            </nav>
+            <a href="https://www.cellsenescence.info/" target="_blank" rel="noopener noreferrer">
+                <img src="./Source/ICSA_Logo.png" alt="ICSA Logo" class="logo">
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main style="min-height: 60vh; padding: 60px 0; text-align: center;">
+        <div class="container">
+            <h2 class="section-heading">ORGANIZER</h2>
+            <div class="heading-underline"></div>
+
+            <div class="organizer-list">
+                <div class="organizer-card">
+                    <div class="organizer-name">Marco Demaria</div>
+                    <div class="organizer-institute">European Research Institute for the Biology of Ageing</div>
+                    <div class="organizer-email">Email: <a href="mailto:m.demaria@umcg.nl">m.demaria@umcg.nl</a></div>
+                </div>
+
+                <div class="organizer-card">
+                    <div class="organizer-name">Yousin Suh</div>
+                    <div class="organizer-institute">Columbia University</div>
+                    <div class="organizer-email">Email: <a
+                            href="mailto:suhlab.aging@gmail.com">suhlab.aging@gmail.com</a></div>
+                </div>
+
+                <div class="organizer-card">
+                    <div class="organizer-name">Chanhee Kang</div>
+                    <div class="organizer-institute">Seoul National University</div>
+                    <div class="organizer-email">Email: <a
+                            href="mailto:chanhee.kang@snu.ac.kr">chanhee.kang@snu.ac.kr</a></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer style="background: #1E2B4B; color: #fff; text-align: center; padding: 20px 0; margin-top: 40px;">
+        <p>&copy; 2026 ICSA Seoul. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

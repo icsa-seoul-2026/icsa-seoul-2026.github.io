@@ -49,13 +49,48 @@ body {
 /* ===== HEADER ===== */
 .header {
     background-color: var(--white);
-    padding: 15px 0;
+    padding: 10px 0;
+    /* Reduced padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    /* Optional subtle shadow */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 55px;
+    /* Keep the header height stable */
 }
 
 .logo {
-    height: 70px;
+    height: 30px;
+    /* Reduced significantly, but header keeps its height */
     width: auto;
     display: block;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-left: 120px;
+    /* Shifted much more to the right */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 19px;
+    font-weight: 600;
+    /* Reduced from 800 for slightly less boldness */
+    text-transform: capitalize;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent-orange);
+    /* Changed only on hover */
 }
 
 /* ===== HERO SECTION ===== */
@@ -179,8 +214,18 @@ body {
     color: var(--text-color);
 }
 
+.speaker-institute {
+    font-size: 16px;
+    font-weight: 400;
+    color: #555;
+    display: block;
+    margin-top: 5px;
+}
+
 .speaker-country {
-    font-weight: 700;
+    font-size: 13px;
+    font-weight: 400;
+    color: #555;
 }
 
 /* ===== INVITED SPEAKERS (4-COL REQUIREMENT) ===== */
@@ -249,5 +294,18 @@ body {
     .hero-section {
         background-position: center 60%;
         /* Prevent the tower from going off-screen on ultra-wide monitors */
+    }
+}
+
+@media (max-width: 850px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-nav {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
