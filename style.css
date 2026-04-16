@@ -16,6 +16,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     font-family: var(--font-main);
     color: var(--text-color);
@@ -78,7 +82,7 @@ body {
     display: flex;
     align-items: center;
     gap: 40px;
-    margin-left: 120px;
+    margin-left: 80px;
     /* Shifted much more to the right */
 }
 
@@ -226,8 +230,11 @@ body {
     margin-top: 5px;
 }
 
-.speaker-country {
-    font-size: 16px;
+.speaker-organization {
+    display: block;
+    margin-top: 5px;
+    line-height: 1.2;
+    font-size: 14px;
     /* Increased from 13px (difference maintained) */
     font-weight: 400;
     color: #555;
@@ -238,6 +245,11 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
+}
+
+.invited-grid a {
+    display: flex;
+    text-decoration: none;
 }
 
 .invited-box {
@@ -252,7 +264,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 80px;
+    min-height: 100px;
+    /* Increased slightly for longer names */
+    width: 100%;
+    line-height: 1.1;
+    transition: transform 0.2s ease;
+}
+
+.invited-box:hover {
+    background-color: #ebeef2;
+    transform: translateY(-3px);
 }
 
 /* ===== RESPONSIVENESS ===== */
