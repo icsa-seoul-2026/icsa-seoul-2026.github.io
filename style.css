@@ -223,7 +223,8 @@ body {
 }
 
 .speaker-country {
-    font-size: 13px;
+    font-size: 16px;
+    /* Increased from 13px (difference maintained) */
     font-weight: 400;
     color: #555;
 }
@@ -240,7 +241,8 @@ body {
     padding: 15px;
     border-radius: 8px;
     text-align: center;
-    font-size: 16px;
+    font-size: 19px;
+    /* Increased from 16px */
     font-weight: 600;
     color: var(--text-color);
     display: flex;
